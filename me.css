@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Yi-Fan Wu
+ * @2016
+ */
+html, body {
+    height:100%;
+    margin:0;
+}
+body{
+    padding: 0;
+    font-family: 'Noto Sans TC', monospace;
+    font-size: 125%;
+    background: #dfd7f7;
+    background: -moz-linear-gradient(-45deg, #dfd7f7 0%, #f4f4f4 29%, #f4f4f4 70%, #c3d9ff 100%);
+    background: -webkit-linear-gradient(-45deg, #dfd7f7 0%,#f4f4f4 29%,#f4f4f4 70%,#c3d9ff 100%);
+    background: linear-gradient(135deg, #dfd7f7 0%,#f4f4f4 29%,#f4f4f4 70%,#c3d9ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfd7f7', endColorstr='#c3d9ff',GradientType=1);
+    -webkit-background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: #0066FF;
+}
+a:hover{
+    text-shadow:0px 0px 1px #222222;
+}
+p, td{
+    color: #444444;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 50px;
+    padding-bottom: 65px;
+}
+.main{
+    padding: 20px 20px;
+    background-color: #fff;
+    box-shadow: 0 15px 20px -15px #000000;
+}
+
+.wrapperPhoto{
+    padding: 10px 10px;
+    width: 250px;
+    background-color: #E8CCFF;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-bottom-right-radius: 25px;
+}
+.photo{
+    margin: 0 auto;
+    padding: 40px 20px;
+    width: 220px;
+    text-align: center;
+}
+.photo > img{
+    width: 180px;
+    border-radius: 20px; 
+    box-shadow: 2px 4px 20px #000000;
+}
+
+.header{
+    margin-top: -300px;
+    margin-bottom: 50px;
+}
+.describe01{
+    text-align: center;
+    margin-right: -20%;
+}
+
+.part{
+    width: 100%;
+    transition-duration: 0.5s;
+    background-color: #E8CCFF;
+    padding: 20px 20px;
+    margin-left: -20px;
+    transform-origin:bottom;
+    transform:skewX(5deg);
+}
+.part:hover{
+    transition-duration: 0.5s;
+    transform:skewX(0deg);
+}
+.part td{
+    color: #777777;
+}
+
+.footer{
+    background-color: #444444;
+    line-height: 65px;
+    height: 65px;
+    text-align: center;
+}
+.footer > p{
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1000px)
+{
+    .header{
+        margin-top: 0px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .photo{
+        margin: 0 auto;
+    }
+
+    .describe01{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-device-width: 480px)
+{
+    .header{
+        margin-top: 0px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .photo{
+        width: 220px;
+    }
+
+    .photo > img{
+
+    }
+}
