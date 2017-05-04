@@ -54,7 +54,7 @@ p, td{
 .wrapperPhoto{
     padding: 10px 10px;
     width: 250px;
-    background-color: #444444;
+    /*background-color: #444444;*/
     margin-left: -20px;
     margin-top: -20px;
     border-bottom-right-radius: 25px;
