@@ -10,7 +10,7 @@ html, body {
 }
 body{
     padding: 0;
-    font-family: 'Noto Sans TC', monospace;
+    font-family: 'Helvetica Neue', 'Noto Sans TC', Helvetica, Arial, sans-serif;
     font-size: 125%;
     background: #dfd7f7;
     background: -moz-linear-gradient(-45deg, #dfd7f7 0%, #f4f4f4 29%, #f4f4f4 70%, #c3d9ff 100%);
@@ -18,13 +18,14 @@ body{
     background: linear-gradient(135deg, #dfd7f7 0%,#f4f4f4 29%,#f4f4f4 70%,#c3d9ff 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfd7f7', endColorstr='#c3d9ff',GradientType=1);
     -webkit-background-size: cover;
+    background-repeat: no-repeat;
 }
 a{
     text-decoration: none;
-    color: #0066FF;
+    color: #77DDFF;
 }
 a:hover{
-    text-shadow:0px 0px 1px #222222;
+    color: #00BBFF;
 }
 p, td{
     color: #444444;
@@ -40,11 +41,20 @@ p, td{
     background-color: #fff;
     box-shadow: 0 15px 20px -15px #000000;
 }
+.language{
+    float: right;
+}
+.language > span > a{
+    color: #999999;
+}
+.language > span > a:hover{
+    color: #00BBFF;
+}
 
 .wrapperPhoto{
     padding: 10px 10px;
     width: 250px;
-    background-color: #E8CCFF;
+    background-color: #444444;
     margin-left: -20px;
     margin-top: -20px;
     border-bottom-right-radius: 25px;
@@ -68,15 +78,16 @@ p, td{
 .describe01{
     text-align: center;
     margin-right: -20%;
+
 }
 
 .part{
-    width: 100%;
     transition-duration: 0.5s;
-    background-color: #E8CCFF;
+    width: 100%;
+    background-color: #444444;
     padding: 20px 20px;
     margin-left: -20px;
-    transform-origin:bottom;
+    /*transform-origin:bottom;*/
     transform:skewX(5deg);
 }
 .part:hover{
@@ -84,7 +95,8 @@ p, td{
     transform:skewX(0deg);
 }
 .part td{
-    color: #777777;
+    font-weight: 300;
+    color: #f5f5f5;
 }
 
 .footer{
@@ -100,10 +112,22 @@ p, td{
 
 @media screen and (max-width: 1000px)
 {
+    body{
+        font-size: 30px;
+    }
+    .main{
+        margin-top: 150px;
+    }
     .header{
         margin-top: 0px;
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 200px;
+    }
+
+    .wrapperPhoto{
+        margin: 0 auto;
+        background-color: transparent;
+        margin-bottom: 150px;
     }
 
     .photo{
@@ -115,18 +139,3 @@ p, td{
     }
 }
 
-@media screen and (max-device-width: 480px)
-{
-    .header{
-        margin-top: 0px;
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    .photo{
-        width: 220px;
-    }
-
-    .photo > img{
-
-    }
-}
